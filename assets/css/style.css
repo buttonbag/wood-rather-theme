@@ -513,10 +513,20 @@ h6,
 }
 
 .social a:hover {
-	color: #fff;
+	color: #999;
 }
 
-/* custom css */
+/* --------
+custom css 
+---------- */
 body {
 	background-color: #333;
+}
+
+/* footer */
+@media (max-width: 575px) {
+	.copyright,
+	.social {
+		text-align: center;
+	}
 }
