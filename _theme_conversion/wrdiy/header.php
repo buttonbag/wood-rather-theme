@@ -52,7 +52,7 @@
       <div class="row align-items-start">
         <div class="col-md-2">
           <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="/">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="works.html">Works</a></li>
@@ -80,7 +80,7 @@
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Wood Rather DIY</a>
+      <a class="navbar-brand" href="/">Wood Rather DIY</a>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
