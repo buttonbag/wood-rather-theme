@@ -9,6 +9,9 @@
 
 ?>
 
+<div class="row mb-4 align-items-center">
+	<div class="col-md-6" data-aos="fade-up">
+		  
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -17,19 +20,18 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-
-		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				wrdiy_posted_on();
-				wrdiy_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
 	</header><!-- .entry-header -->
+	
+	</div>
+</div>
 
-	<?php wrdiy_post_thumbnail(); ?>
+
+<div class="site-section pb-0">
+	<div class="container">
+		<div class="row align-items-stretch">
+		<div class="col-md-8" data-aos="fade-up">
+			<?php wrdiy_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -56,6 +58,17 @@
 		);
 		?>
 	</div><!-- .entry-content -->
+
+		</div>	
+
+		<div class="col-md-3" data-aos="fade-up">
+			<?php get_sidebar();?>
+		</div>
+
+		</div>	<!-- .row -->
+	</div> 	
+</div>	
+
 
 	<footer class="entry-footer">
 		<?php wrdiy_entry_footer(); ?>
