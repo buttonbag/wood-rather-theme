@@ -60,11 +60,9 @@
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
-          <div class="tweet d-flex">
-            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
+          <div class="d-flex">
             <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
-                  officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
+            <?php dynamic_sidebar('Primary');?>
             </div>
           </div>
         </div>

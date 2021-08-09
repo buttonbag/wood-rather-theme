@@ -62,7 +62,7 @@
 		</div>	
 
 		<div class="col-md-3" data-aos="fade-up">
-			<?php get_sidebar();?>
+			<?php dynamic_sidebar('page-sidebar');?>
 		</div>
 
 		</div>	<!-- .row -->

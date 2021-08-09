@@ -124,17 +124,32 @@ add_action( 'after_setup_theme', 'wrdiy_content_width', 0 );
 function wrdiy_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'wrdiy' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Primary', 'wrdiy' ),
+			'id'            => 'primary',
 			'description'   => esc_html__( 'Add widgets here.', 'wrdiy' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }
 add_action( 'widgets_init', 'wrdiy_widgets_init' );
+function wrdiy_widgets_init2() {
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'page-sidebar', 'wrdiy' ),
+			'id'            => 'page-sidebar',
+			'description'   => esc_html__( 'Add widgets here.', 'wrdiy' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+			)
+		);
+	}
+	add_action( 'widgets_init', 'wrdiy_widgets_init2' );
+
 
 /**
  * Enqueue scripts and styles.
