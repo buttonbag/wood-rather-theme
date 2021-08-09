@@ -538,3 +538,14 @@ body {
 		text-align: center;
 	}
 }
+
+/* widget */
+.widget li {
+	padding-bottom: 1em;
+}
+.widget > li > a {
+	color: white;
+}
+a:visited {
+	color: #cecece;
+}

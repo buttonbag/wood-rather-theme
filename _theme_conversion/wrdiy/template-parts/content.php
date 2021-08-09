@@ -9,10 +9,11 @@
 
 ?>
 
+TEST CONTENT
 <div class="row mb-4 align-items-center">
-	<div class="col-md-6" data-aos="fade-up">
-		  
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="col-12" data-aos="fade-up">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -22,13 +23,11 @@
 		endif;
 			?>
 	</header><!-- .entry-header -->
-	
 	</div>
-</div>
+
 
 
 <div class="site-section pb-0">
-	<div class="container">
 		<div class="row align-items-stretch">
 		<div class="col-md-8" data-aos="fade-up">
 			<?php wrdiy_post_thumbnail(); ?>
@@ -59,13 +58,12 @@
 		?>
 	</div><!-- .entry-content -->
 
-		</div>	
-
+		
+	</div>
+	
 		<div class="col-md-3" data-aos="fade-up">
 			<?php dynamic_sidebar('page-sidebar');?>
 		</div>
-
-		</div>	<!-- .row -->
 	</div> 	
 </div>	
 
@@ -74,3 +72,6 @@
 		<?php wrdiy_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+	</div>
+	
