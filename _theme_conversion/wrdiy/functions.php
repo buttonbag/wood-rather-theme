@@ -143,8 +143,8 @@ function wrdiy_widgets_init2() {
 			'description'   => esc_html__( 'Add widgets here.', 'wrdiy' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+/* 			'before_title'  => '<h3 class="widget-title">This Title',
+			'after_title'   => '</h3>', */
 			)
 		);
 	}
