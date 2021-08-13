@@ -52,11 +52,8 @@
       <div class="row align-items-start">
         <div class="col-md-2">
           <ul class="custom-menu">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/about-me">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="<?php echo esc_url( home_url('/')); ?>" rel="home">Home</a></li>
+            <li><a href="<?php echo esc_url( home_url('/')); ?>about-me">About Me</a></li>
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
@@ -67,9 +64,9 @@
           </div>
         </div>
         <div class="col-md-4 d-none d-md-block">
-          <h3>Hire Me</h3>
+          <!-- <h3>Hire Me</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
-            officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
+            officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p> -->
         </div>
       </div>
 
