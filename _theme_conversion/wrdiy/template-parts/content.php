@@ -61,7 +61,7 @@ TEST CONTENT
 		
 	</div>
 	
-		<div class="col-md-3" data-aos="fade-up">
+		<div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
 			<?php dynamic_sidebar('page-sidebar');?>
 		</div>
 	</div> 	
