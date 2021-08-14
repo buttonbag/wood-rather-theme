@@ -5,6 +5,7 @@
             <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up">
                 <h2>Hey, I'm Louie</h2>
                 <p class="mb-0">Novice woodworker with a few ideas, hoping to inspire or in the least, spark interest.
+                    <a href="<?php echo esc_url(home_url('/')); ?>about-me">read more &raquo;</a>
                 </p>
             </div>
             <div class="col-12 text-start" data-aos="fade-up" data-aos-delay="100">

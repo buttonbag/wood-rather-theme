@@ -19,10 +19,10 @@
           <p class="mb-3">&copy; 2021 Wood Rather DIY</p>
         </div>
         <div class="col-sm-6 social text-md-end">
-          <a href="#"><span class="bi bi-twitter"></span></a>
+          <!-- <a href="#"><span class="bi bi-twitter"></span></a>
           <a href="#"><span class="bi bi-facebook"></span></a>
           <a href="#"><span class="bi bi-instagram"></span></a>
-          <a href="#"><span class="bi bi-linkedin"></span></a>
+          <a href="#"><span class="bi bi-linkedin"></span></a> -->
         </div>
       </div>
     </div>

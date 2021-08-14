@@ -56,7 +56,7 @@
             <li><a href="<?php echo esc_url( home_url('/')); ?>about-me">About Me</a></li>
           </ul>
         </div>
-        <div class="col-md-6 d-none d-md-block  mr-auto">
+        <div class="col-md-6">
           <div class="d-flex">
             <div>
             <?php dynamic_sidebar('Primary');?>
