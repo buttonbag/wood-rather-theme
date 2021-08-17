@@ -10,6 +10,7 @@
 ?>
 
 <div class="container">
+<div class="col-md-6 m-auto">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -55,4 +56,5 @@
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
 
+</div>
 </div>
