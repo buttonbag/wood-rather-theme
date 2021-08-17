@@ -9,7 +9,6 @@
 
 ?>
 
-TEST CONTENT
 <div class="row mb-4 align-items-center">
 	
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -61,7 +60,7 @@ TEST CONTENT
 		
 	</div>
 	
-		<div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+		<div class="col-md-3 mt-5 mt-md-0" data-aos="fade-up" data-aos-delay="200">
 			<?php dynamic_sidebar('page-sidebar');?>
 		</div>
 	</div> 	
