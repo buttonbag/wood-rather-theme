@@ -63,7 +63,22 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-none d-md-block">
+        <div class="col-md-4 d-none d-md-block social">
+          <p>check out my socials:</p>
+        <?php $loop = new WP_Query(
+            array('post_type' => 'social')
+          ); 
+          while ( $loop -> have_posts() ) : $loop -> the_post();
+            $soc_link = get_field('soc_link');
+            $soc_icon = get_field('soc_icon');
+            if (!empty($soc_link)) : 
+          ?>
+            <a href="<?php echo $soc_link; ?>"><span class="<?php echo $soc_icon; ?>"></span></a>
+            <?php 
+              endif;
+              endwhile;
+              wp_reset_query();
+            ?>          
           <!-- <h3>Hire Me</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
             officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p> -->

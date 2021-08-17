@@ -19,6 +19,21 @@
           <p class="mb-3">&copy; 2021 Wood Rather DIY</p>
         </div>
         <div class="col-sm-6 social text-md-end">
+          <?php $loop = new WP_Query(
+            array('post_type' => 'social')
+          ); 
+          while ( $loop -> have_posts() ) : $loop -> the_post();
+            $soc_link = get_field('soc_link');
+            $soc_icon = get_field('soc_icon');
+            if (!empty($soc_link)) : 
+          ?>
+            <a href="<?php echo $soc_link; ?>"><span class="<?php echo $soc_icon; ?>"></span></a>
+            <?php 
+              endif;
+              endwhile;
+              wp_reset_query();
+            ?>
+          
           <!-- <a href="#"><span class="bi bi-twitter"></span></a>
           <a href="#"><span class="bi bi-facebook"></span></a>
           <a href="#"><span class="bi bi-instagram"></span></a>
