@@ -149,6 +149,22 @@ function wrdiy_widgets_init2() {
 		);
 	}
 	add_action( 'widgets_init', 'wrdiy_widgets_init2' );
+function wrdiy_widgets_about() {
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'about', 'wrdiy' ),
+			'id'            => 'about',
+			'description'   => esc_html__( 'Add widgets here.', 'wrdiy' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+/* 			'before_title'  => '<h3 class="widget-title">This Title',
+			'after_title'   => '</h3>', */
+			)
+		);
+	}
+	add_action( 'widgets_init', 'wrdiy_widgets_about' );
+
+	/* <?php dynamic_sidebar('WIDGET');?> */
 
 
 /**

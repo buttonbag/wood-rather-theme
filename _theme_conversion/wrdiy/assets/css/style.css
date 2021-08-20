@@ -519,9 +519,9 @@ h6,
 	color: #999;
 }
 
-/* --------
-custom css 
----------- */
+/* ----------------------
+CUSTOM CSS
+------------------------- */
 body {
 	background-color: #333;
 }
@@ -540,6 +540,11 @@ body {
 }
 
 /* widget */
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
 .widget li {
 	padding-bottom: 1em;
 }
