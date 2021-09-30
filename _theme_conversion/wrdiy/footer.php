@@ -16,6 +16,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 copyright">
+          <p class="mb-3"><a href="<?php echo esc_url( home_url('/')); ?>privacy-policy">Privacy Policy</a></p>
           <p class="mb-3">&copy; 2021 Wood Rather DIY</p>
         </div>
         <div class="col-sm-6 social text-md-end">
